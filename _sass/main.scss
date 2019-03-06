@@ -17,14 +17,29 @@ $pink: #ff8080;
 $pink-invert: #fff;
 // Update the sans-serif font family
 $family-sans-serif: "Helvetica", "Arial", sans-serif;
+$family-serif: 'Crimson Text', serif;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
 $primary: $pink;
 $primary-invert: $pink-invert;
 
-// 4. Import the rest of Bulma
- 
+$link: $black;
 
+// 4. Import the rest of Bulma
 @import "../node_modules/bulma/bulma";
 
+// 5. Get the google font
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+body {
+  font-family: 'Crimson Text', serif;
+}
+
+.v-space-1 {
+  margin-top: 1rem
+}
+
+.v-space-2 {
+  margin-top: 2rem
+}
